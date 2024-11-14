@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex App</title>
+
+        <!--Normalize css-->
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"
+            />
+
+        <!--Estilo global-->
+        <link rel="stylesheet" href="assets/css/global.css">
+    </head>
+    <body>
+        <section class="content">
+            <nav class="navbar">
+                <h1>Pokedex</h1>
+                <img src="assets/images/pokedexlogo.png" alt="Pokedex Logotipo">
+            </nav>
+            <ol id="pokemon-list" class="pokemons">
+
+            </ol>
+            <div id="pokemon-modals" class="pokemon-modals">
+
+            </div>
+            <div class="pagination">
+                <button id="load-more" type="button">
+                    Load More
+                </button>
+            </div>
+        </section>
+        <script src="assets/js/pokemon-model.js"></script>
+        <script src="assets/js/poke-api.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
